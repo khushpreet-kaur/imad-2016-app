@@ -9,8 +9,16 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('article1', function (req, res) {
-  res.send('Article one is requested');
+app.get('contact', function (req, res) {
+  res.send('Contact info: +9123234234234');
+});
+
+app.get('gallery', function (req, res) {
+  res.send('Loading Gallery....');
+});
+
+app.get('location', function (req, res) {
+  res.send('KR ROAD, BANGALORE');
 });
 
 app.get('/ui/style.css', function (req, res) {
