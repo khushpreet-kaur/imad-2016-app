@@ -9,15 +9,15 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('contact', function (req, res) {
+app.get('/contact', function (req, res) {
   res.send('Contact info: +9123234234234');
 });
 
-app.get('gallery', function (req, res) {
+app.get('/gallery', function (req, res) {
   res.send('Loading Gallery....');
 });
 
-app.get('location', function (req, res) {
+app.get('/location', function (req, res) {
   res.send('KR ROAD, BANGALORE');
 });
 
